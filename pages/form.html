@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <p><i>Пожалуйста, заполните форму. Обязательные поля помечены <span style="color: red;">*</span></i></p>
+    <form action="https://webhook.site/75e71052-25d8-41df-bb19-a7c9f470f36f" method="get">
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <table>
+                <tr>
+                    <td width="100">Имя <span style="color: red;">*</span></td>
+                    <td><input type="text" name="name" autofocus required></td>
+                </tr>
+                <tr>
+                    <td width="100">Телефон</td>
+                    <td><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td>
+                </tr>
+                <tr>
+                    <td width="100">Email <span style="color: red;">*</span></td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <table>
+                <tr>
+                    <td width="100">Возраст <span style="color: red;">*</span></td>
+                    <td><input type="number" name="age" required></td>
+                </tr>
+                <tr>
+                    <td>Пол</td>
+                    <td><select name="sex">
+                            <option value="female">Женщина </option>
+                            <option value="male">Мужчина </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Перечислите личные качества</td>
+                    <td><textarea name="qualities" cols="20" rows="5"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+            <table>
+                <tr>
+                    <td width="100">
+                        <input type="checkbox" name="animal1" value="zebra" id="animal1"><label for="animal1">Зебра</label>
+                    </td>
+                    <td width="100">
+                        <input type="checkbox" name="animal2" value="cat" id="animal2"><label for="animal2">Кошак</label>
+                    </td>
+                    <td width="100">
+                        <input type="checkbox" name="animal3" value="anaconda" id="animal3"><label for="animal3">Анаконда</label>
+                    </td>
+                    <td width="100">
+                        <input type="checkbox" name="animal4" value="human" id="animal4"><label for="animal4">Человек</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100">
+                        <input type="checkbox" name="animal5" value="elephant" id="animal5"><label for="animal5">Слон</label>
+                    </td>
+                    <td width="100">
+                        <input type="checkbox" name="animal6" value="antelope" id="animal6"><label for="animal6">Антилопа</label>
+                    </td>
+                    <td width="100">
+                        <input type="checkbox" name="animal7" value="pigeon" id="animal7"><label for="animal7">Голубь</label>
+                    </td>
+                    <td width="100">
+                        <input type="checkbox" name="animal8" value="crab" id="animal8"><label for="animal8">Краб</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <p><input type="submit" value="Отправить информацию"></p>
+    </form>
+</body>
+</html>
